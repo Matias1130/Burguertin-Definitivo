@@ -32,7 +32,7 @@
                     <div class="collapse navbar-collapse div__ul" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active menu" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link active menu" aria-current="page" id="inicio" href="#">Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle menu" href="#" role="button"
@@ -62,21 +62,69 @@
         <div class="container">
             <video class="video" src="./assets/video/videoproyecto.mp4" muted loop autoplay></video>
         </div>
+        <div class="container div__ofertas">
+            <h1>Ofertas del Mes</h1>
+            <div id="carouselExampleCaptions" class="carousel slide carrusel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img  src="./assets/burg-beef.jpg" class="d-block w-100 imagen__carrusel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo__imagen__carrusel">Triple Burguer</h5>
+                            <p class="subtitulo__imagen__carrusel">$5800</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/burga.jpg" class="d-block w-100 imagen__carrusel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo__imagen__carrusel">Italy Burguer</h5>
+                            <p class="subtitulo__imagen__carrusel">$3500</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/cuadru.jpg" class="d-block w-100 imagen__carrusel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo__imagen__carrusel">Cuadra Burguer</h5>
+                            <p class="subtitulo__imagen__carrusel">$7000</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
         <div class="container linea"></div>
     </main>
     <footer>
         <div class="container div__footer">
             <div class="div__ul__footer">
                 <ul class="ul__footer">
-                    <li class="li__footer">Inicio</li>
+                    <li class="li__footer"><a href="#inicio">Inicio</a></li>
                     <li class="li__footer">Menu</li>
                     <li class="li__footer">Nosotros</li>
                     <li class="li__footer">Contacto</li>
                 </ul>
             </div>
             <div class="div__redes__sociales">
-                <img class="icono__redes" src="./assets/logo-face.png" alt="logo facebook">
-                <img class="icono__redes instagram" src="./assets/logo-insta.png" alt="logo instagram">
+                <p class="p__face">Facebook</p>
+                <a href=""><img class="icono__redes icono1" src="./assets/logo-face.png" alt="logo facebook"></a>
+                <p class="p__insta">Instagram</p>
+                <a href=""><img class="icono__redes instagram" src="./assets/logo-insta.png" alt="logo instagram"></a>
             </div>
         </div>
     </footer>

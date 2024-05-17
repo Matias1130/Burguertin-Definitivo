@@ -3,9 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: "concert one";
+    font-size: 10px;
+}
 
 header{
     background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
 }
 
 .div__ul{
@@ -63,6 +72,33 @@ header{
     width: 100%;
 }
 
+.div__ofertas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0 ;
+}
+
+.carrusel{
+    width: 50%;
+}
+
+.titulo__imagen__carrusel{
+    color: #000;
+    font-size: 2rem ;
+}
+
+.subtitulo__imagen__carrusel{
+    color: #000;
+    font-size: 3rem;
+}
+
+
+.imagen__carrusel{
+    height: 500px;
+    object-fit: cover;
+}
 /*estilo footer*/
 
 .div__footer{
@@ -82,11 +118,14 @@ header{
 
 .div__redes__sociales{
     grid-area: redes;
-    display: flex;
-    flex-direction:column;
-    align-items: end;
-    justify-content: end;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+    "face2 face1"
+    "insta2 insta1" ;
     width: 100%;
+    gap: 10px;
+    align-items: center;
 }
 
 .ul__footer{
@@ -98,12 +137,29 @@ header{
     height: 40px;
 }
 
+.icono1{
+    grid-area: face1;
+}
+
+.p__face{
+    grid-area: face2;
+    font-family: "concert one";
+    font-size: 1.2rem;
+}
+
 .instagram{
-    margin-top: 40px;
+    grid-area: insta1;
+}
+
+.p__insta{
+    grid-area: insta2;
+    font-family: "concert one";
+    font-size: 1.2rem;
 }
 
 .li__footer{
     font-family: "concert one";
+    font-size: 1.2rem;
     transition: transform 0.5s ease;
 }
 
