@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #fff;
+}
+
+.div__ul{
+    font-size: 10px;
+}
+
+.logo__burguer{
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo__burguer:hover{
+    transform: rotate(360deg);
+}
+
+.menu{
+    font-family: "Concert One", monospace;
+    font-size: 2rem !important;
+    margin: 0 25px;
+    color: black;
+    transition: transform 0.5s ease;
+}
+
+.menu:hover{
+    transform: scale(1.2);
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: #000
+    --bs-nav-link-color: #000
+}
+
+.ul__submenu{
+    border: none;
+}
+
+.submenu{
+    font-family: "concert one";
+    transition: transform 0.5s ease;
+}
+
+.submenu:hover{
+    transform: scale(1.1);
+}
+.linea{
+    
+    width: 60%;
+    height: 2px;
+    background-color: rgb(255, 123, 0);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.video{
+    width: 100%;
+}
+
+/*estilo footer*/
+
+.div__footer{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+    "ul redes" ;
+    justify-content: space-between;
+}
+
+.div__ul__footer{
+    grid-area: ul;
+    display: flex;
+    justify-content:flex-start ;
+}
+
+.div__redes__sociales{
+    grid-area: redes;
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+}
+
+.ul__footer{
+    list-style: none;
+}
+
+.icono__redes{
+    width: 40px;
+    height: 40px;
+}
+
+.instagram{
+    margin-top: 40px;
+}
+
+.li__footer{
+    font-family: "concert one";
+    transition: transform 0.5s ease;
+}
+
+.li__footer:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
